@@ -24,7 +24,10 @@ import play.api.{LoggerLike, Logger}
 import play.api.mvc.{Filter, RequestHeader, Result}
 import uk.gov.hmrc.play.http.HeaderCarrier
 import uk.gov.hmrc.play.http.logging.{LoggingDetails, MdcLoggingExecutionContext}
-import MdcLoggingExecutionContext._
+//import MdcLoggingExecutionContext._
+import play.api.libs.concurrent.Execution.Implicits.defaultContext
+
+
 
 import scala.concurrent.Future
 import uk.gov.hmrc.play.HeaderCarrierConverter
