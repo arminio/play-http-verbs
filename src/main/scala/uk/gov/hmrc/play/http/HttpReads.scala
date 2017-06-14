@@ -20,7 +20,7 @@ import play.twirl.api.Html
 import uk.gov.hmrc.play.http.{HttpErrorFunctions, HttpReads, HttpResponse, JsonHttpReads, OptionHttpReads, RawReads}
 
 
-object HttpReads extends HtmlHttpReads with OptionHttpReads with JsonHttpReads {
+object HttpReadsWithHtml extends HtmlHttpReads with OptionHttpReads with JsonHttpReads {
   // readRaw is brought in like this rather than in a trait as this gives it
   // compilation priority during implicit resolution. This means, unless
   // specified otherwise a verb call will return a plain HttpResponse
